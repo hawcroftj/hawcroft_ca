@@ -1,0 +1,49 @@
+/*
+ * Manual Bootstrap override
+ */
+body{
+    min-height:100vh !important;
+    position:relative;
+    margin:0;
+}
+footer{
+    position:absolute !important;
+    bottom:0;
+}
+/*
+ * Custom colour swatch
+ * 'l' colours are light, 'd' colours are dark
+ */
+.colour-p{
+    background-color:#256E5D !important;
+}
+.colour-l1{
+    background-color:#60A192 !important;
+}
+.colour-l2{
+    background-color:#D0F2EA !important;
+}
+.colour-d1{
+    background-color:#043B2E !important;
+}
+.colour-d2{
+    background-color:#000806 !important;
+}
+.text-l1{
+    color:#AAAAAA;
+}
+.text-l2{
+    color:#D0F2EA;
+}
+.text-d1{
+    color:#043B2E;
+}
+.text-d2{
+    color:#000806;
+}
+/*
+ * Additional CSS functions
+ */
+ .text-bulge:hover{
+     font-size: 150%;
+ }
