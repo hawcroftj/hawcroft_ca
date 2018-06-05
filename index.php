@@ -17,9 +17,9 @@
     
     <body id="body" class="colour-p">
         <?php include('nav.php'); ?>
-        <div id="banner" class="jumotron jumbotron-fluid text-center border-top border-bottom border-dark pb-3 colour-l1 text-d2">
-            <h1 class="display-2 text-xs-center">hawcroft.ca</h1>
-            <p class="lead text-xs-center">My personal JavaScript sandbox. Thanks for stopping by!</p>
+        <div id="banner" class="jumotron jumbotron-fluid text-center border-top border-bottom border-dark pt-1 pb-1 colour-l1 text-d2">
+            <h1 class="font-weight-light">hawcroft.ca</h1>
+            <p class="lead">My personal JavaScript sandbox. Thanks for stopping by!</p>
         </div>
         <div class="container rounded mt-5 p-5 ">
             <div class="row">
