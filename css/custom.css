@@ -2,35 +2,31 @@
  * Manual Bootstrap override
  */
 body{
-    min-height:100vh !important;
+    min-height: 100vh !important;
     position:relative;
     margin:0;
 }
-footer{
-    position:absolute !important;
-    bottom:0;
-}
-/* Responsive font sizing for display headings */
-@media (max-width: 575.98px) {
+/* Responsive styling sizing for small devices */
+@media (max-width:575.98px) {
     .display-1 {
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 1.0;
+        font-size:3rem;
+        font-weight:300;
+        line-height:1.0;
     }
     .display-2 {
-        font-size: 2.75rem;
-        font-weight: 300;
-        line-height: 1.0;
+        font-size:2.75rem;
+        font-weight:300;
+        line-height:1.0;
     }
     .display-3 {
-        font-size: 2.25rem;
-        font-weight: 300;
-        line-height: 1.0;
+        font-size:2.25rem;
+        font-weight:300;
+        line-height:1.0;
     }
     .display-4 {
-        font-size: 1.75rem;
-        font-weight: 300;
-        line-height: 1.0;
+        font-size:1.75rem;
+        font-weight:300;
+        line-height:1.0;
     }
 }
 /*
@@ -68,5 +64,5 @@ footer{
  * Additional CSS functions
  */
  .text-bulge:hover{
-     font-size: 150%;
+     font-size:150%;
  }

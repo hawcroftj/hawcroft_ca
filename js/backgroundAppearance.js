@@ -1,7 +1,8 @@
 var navElement = document.getElementById("nav");
 var bodyElement = document.getElementById("body");
 var bannerElement = document.getElementById("banner");
-var elementsArr = [navElement, bodyElement, bannerElement];
+var footerElement = document.getElementById("footer");
+var elementsArr = [navElement, bodyElement, bannerElement, footerElement];
 // add onClick listener to footer text for swapping modes
 var modeButton = document.getElementById("changeMode");
 modeButton.addEventListener("click", function(){ changeMode() });
