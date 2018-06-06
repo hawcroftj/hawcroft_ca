@@ -32,6 +32,7 @@ function nightMode() {
     applyColourClasses(navElement, "colour-d2");
     applyColourClasses(bodyElement, "colour-d2");
     applyColourClasses(bannerElement, "colour-d1");
+    applyColourClasses(footerElement, "colour-d1");
     // brighten the text against the dark background
     removeTextColourClasses(bannerElement);
     applyColourClasses(bannerElement, "text-l2");
@@ -48,6 +49,7 @@ function dayMode() {
     applyColourClasses(navElement, "colour-p");
     applyColourClasses(bodyElement, "colour-p");
     applyColourClasses(bannerElement, "colour-l1");
+    applyColourClasses(footerElement, "colour-p");
     // darken the text against the light background
     removeTextColourClasses(bannerElement);
     applyColourClasses(bannerElement, "text-d2");
