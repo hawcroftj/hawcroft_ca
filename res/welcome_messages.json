@@ -1,5 +1,14 @@
 {
     "messages": [
-        
+            "Welcome! Please, have a seat. Would you like some coffee?",
+            "Thanks for stopping by. Please feel free to have a look around.",
+            "Hi there! Is the site too bright? Try out the Night mode at the bottom right corner.",
+            "I see a little silhouetto of a user!",
+            "Feedback is welcome! Please hand-write your questions or comments and hand them to your local mail carrier!",
+            "This is welcome message #6! I'm starting to run out of ideas!",
+            "If you like the site, check out my GitHub! If you don't like it, simply press Ctrl-W, or Command-W.",
+            "I'd give a proper greeting but I gotta spin up these dynos! Shoutout to Heroku!",
+            "Roses are red, violets are blue, this site is made possible by the folks at Heroku!",
+            "This page is nondescript if you disable JavaScript!"
     ]
 }
