@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+    
 ?>
 
 <!DOCTYPE html>
@@ -46,6 +46,7 @@
         <?php include('footer.php'); ?>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/backgroundAppearance.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/background_appearance.js"></script>
     </body>
 </html>
