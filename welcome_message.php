@@ -1,7 +1,7 @@
 <?php
 /*
-* This file initializes some functions and values that
-* are required for some JavaScript features.
+* This file retrieves and echoes a welcome message from a json file
+* so it can be used by the JavaScript setWelcomeMessage function
 */
     // Grabs a welcome message at random from welcome_messages.json
     // and prepares it for use with JavaScript

@@ -64,6 +64,7 @@ body{
 /*
  * Additional CSS functions
  */
+ /* enlarges social link text on hover */
 .text-bulge{
     -webkit-transition:font-size .4s, width .4s;
     transition:font-size .4s, width .4s;
@@ -71,4 +72,9 @@ body{
 .text-bulge:hover{
     font-size:200%;
     width:150%;
+}
+/* prepares animation for welcome message */
+#welcome-message{
+    position:relative;
+    left:-100%;
 }

@@ -15,8 +15,14 @@ function setWelcomeMessage() {
       oReq.open("get", "welcome_message.php", true);
       oReq.send();
 }
+// Animates the welcome message with a 1 second fly-in
+function animateWelcomeMessage() {
+    $("#welcome-message").animate({
+    "left": 0
+    },1000);
+}
 
-// when the page is ready, set the welcome message
 $( document ).ready(function() {
-    setWelcomeMessage();
+    setWelcomeMessage();            // set the welcome message
+    animateWelcomeMessage();        // then animate it into view
 });
