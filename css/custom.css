@@ -64,6 +64,11 @@ body{
 /*
  * Additional CSS functions
  */
- .text-bulge:hover{
-     font-size:150%;
- }
+.text-bulge{
+    -webkit-transition:font-size .4s, width .4s;
+    transition:font-size .4s, width .4s;
+}
+.text-bulge:hover{
+    font-size:200%;
+    width:150%;
+}
