@@ -26,7 +26,7 @@ $test_data = [
         <title>Blog | Hawcroft</title>
     </head>
 
-    <body class="colour-p">
+    <body id="body" class="colour-p">
         <?php include('nav.php'); ?>
         
         <!-- Check for blog posts -->
@@ -34,7 +34,7 @@ $test_data = [
             <div class="container">
             <!-- Add post(s) to the container -->
             <?php foreach($test_data as $blog): ?>
-                <div class="row mt-2 colour-l1">
+                <div class="row mt-2 colour-l1 blog-entry">
                     <div class="col-sm-10 offset-1 p-2 colour-l1">
                         <p><?= $blog["title"] ?></p>
                         <p><?= $blog["content"] ?></p>

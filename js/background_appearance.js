@@ -2,6 +2,7 @@ var navElement = document.getElementById("nav");
 var bodyElement = document.getElementById("body");
 var bannerElement = document.getElementById("banner");
 var footerElement = document.getElementById("footer");
+var blogElements = document.getElementsByClassName("blog-entry");
 var elementsArr = [navElement, bodyElement, bannerElement, footerElement];
 // add onClick listener to footer text for swapping modes
 var modeButton = document.getElementById("changeMode");
@@ -58,7 +59,9 @@ function dayMode() {
 function applyColourClasses(element, colourClass) {
     // add desired colourClass background colour (see custom.css)
     // += ensures all other classes remain by adding to the class tag
-    element.className += ' ' + colourClass;
+    if(element){ // if the element is not null/empty
+        element.className += ' ' + colourClass;
+    }
 }
 
 function removeBackgroundColourClasses(element) {
@@ -66,10 +69,14 @@ function removeBackgroundColourClasses(element) {
     // "\bcolour-"  removes classes beginning with "colour-"
     // "[ldp]"      after the hyphen, removes l, d, or p characters (see custom.css)
     // "[\d]?\b"    removes a single digit if present
-    element.className = element.className.replace( /\b ?colour-[ldp][\d]?\b/g, '' );
+    if(element){ // if the element is not null/empty
+        element.className = element.className.replace( /\b ?colour-[ldp][\d]?\b/g, '' );
+    }
 }
 
 function removeTextColourClasses(element) {
     // for regex explanation, see removeBackgroundColourClasses
-    element.className = element.className.replace( /\b ?text-[ldp][\d]?\b/g, '' );
+    if(element){ // if the element is not null/empty
+        element.className = element.className.replace( /\b ?text-[ldp][\d]?\b/g, '' );
+    }
 }
