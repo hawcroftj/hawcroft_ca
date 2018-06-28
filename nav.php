@@ -5,7 +5,7 @@ echo '
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="#"><img src="res/jh.png"/></a>
+    <a class="navbar-brand" href="index.php"><img src="res/jh.png"/></a>
 
     <div class="collapse navbar-collapse" id="nav-content">
         <ul class="navbar-nav">
@@ -17,6 +17,9 @@ echo '
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.php">Blog</a>
             </li>
         </ul>
     </div>
