@@ -1,5 +1,7 @@
 <?php
 
+require('connect.php');
+
 $test_data = [
     "blog1" => [
         "title" => "Blog Post 1",
