@@ -16,10 +16,13 @@ echo '
                 <a class="nav-link" href="https://github.com/hawcroftj">GitHub</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="blog.php">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blog.php">Blog</a>
+                <a class="nav-link" href="about.php">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
     </div>
