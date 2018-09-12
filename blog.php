@@ -1,18 +1,7 @@
 <?php
-
-//require('connect.php');
-
-$test_data = [
-    // "blog1" => [
-    //     "title" => "Under Development",
-    //     "content" => "I'm working on getting a database set up for the blogs page. Everything you see here is a work in progress."
-    // ],
-    // "blog2" => [
-    //     "title" => "Test Blog Post",
-    //     "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus maximus tincidunt. Ut scelerisque imperdiet dui vitae feugiat. Donec ullamcorper, tellus vel rhoncus tincidunt, sapien velit lacinia purus, et luctus sem lacus eget ex. Donec non consectetur quam. Quisque at elit et tortor dapibus rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus at urna id quam tincidunt dictum vel at erat. Integer tellus velit, facilisis eu nunc at, aliquet eleifend nibh. Donec tempor lacus at sem rutrum semper. Vestibulum libero risus, hendrerit quis libero in, auctor vestibulum eros. Etiam porta accumsan quam, et pulvinar est pulvinar a. Maecenas et eros in ante pharetra consequat vel eget nibh. Phasellus fermentum volutpat metus ut elementum. Sed ligula mi, laoreet sit amet maximus tincidunt, pretium ac purus."
-    // ]
-]
-
+    require_once 'connect.php';
+    $posts_query = pg_query($db_conn, "SELECT * FROM posts");
+    $posts = pg_fetch_all($posts_query);
 ?>
 
 <!DOCTYPE html>
@@ -40,10 +29,10 @@ $test_data = [
         </div>
 
         <!-- Check for blog posts -->
-        <?php if(!empty($test_data)): ?>
+        <?php if(!empty($posts)): ?>
             <div class="container">
             <!-- Add post(s) to the container -->
-            <?php foreach($test_data as $blog): ?>
+            <?php foreach($posts as $blog): ?>
                 <div class="row mt-2 colour-l1 blog-entry">
                     <div class="col-sm-10 offset-1 p-2 colour-l1">
                         <p><?= $blog["title"] ?></p>
