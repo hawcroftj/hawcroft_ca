@@ -9,6 +9,9 @@
 !.vscode/extensions.json
 .history
 
+### Database Information File(s) ###
+connect.php
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
