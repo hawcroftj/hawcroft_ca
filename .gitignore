@@ -10,7 +10,7 @@
 .history
 
 ### Database Information File(s) ###
-connect.php
+db-connect.php
 
 ### Windows ###
 # Windows thumbnail cache files

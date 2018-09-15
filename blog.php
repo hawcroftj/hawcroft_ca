@@ -1,5 +1,6 @@
 <?php
-    require_once 'connect.php';
+    // connect to and query database for posts
+    require_once 'db-connect.php';
     $posts_query = pg_query($db_conn, "SELECT * FROM posts");
     $posts = pg_fetch_all($posts_query);
 ?>
@@ -27,6 +28,8 @@
                 Feel free to check back here for updates - everything is right on schedule.*</p>
             <p>*there is currently no schedule.</p>
         </div>
+
+        <a href="db-create.php">New Blog</a>
 
         <!-- Check for blog posts -->
         <?php if(!empty($posts)): ?>
